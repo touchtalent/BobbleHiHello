@@ -11,7 +11,13 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         jcenter()
-        mavenLocal()
+        maven {
+            url 'https://mymavenrepo.com/repo/UuLG0cVkjPGsYdaO6edc/'
+            credentials {
+                username mavenReadUsername
+                password mavenReadPassword
+            }
+        }
     }
 }
 rootProject.name = "BobbleHiHelloSDKSample"
