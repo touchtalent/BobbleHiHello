@@ -14,8 +14,6 @@ implementation 'com.touchtalent.bobblesdk:transliteration'
 
 ## <a name="apis"></a>Bobble Transliterator APIs
 
-### BobbleTransliterator
-
 1. Managing languages - Transliteration requires few resources to be downloaded from the internet. Install/uninstall the language as per the requirement.
 ```kotlin
 class SplashActivity : AppCompatActivity {

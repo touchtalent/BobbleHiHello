@@ -19,9 +19,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //set language to download resources, if not already present
-        BobbleTransliteratorSdk.setLanguages("hi_IN")
-
         binding.head.setOnClickListener {
             // Launch demo activity to show-case use of Head APIs
             launch(HeadDemoActivity::class.java)

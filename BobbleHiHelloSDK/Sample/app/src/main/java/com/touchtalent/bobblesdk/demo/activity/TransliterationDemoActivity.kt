@@ -18,8 +18,8 @@ class TransliterationDemoActivity : AppCompatActivity() {
 
 
         val locale = "hi_IN"
-        //if language is active show BobbleTransliteration view
-        if (BobbleTransliteratorSdk.isActive(locale)) {
+        //if language resources is available show BobbleTransliteration view
+        if (BobbleTransliteratorSdk.isAvailable(locale)) {
             //set language for translator view
             binding.suggestionStrip.setLanguage("hi_IN")
             //bind edit text for translation
