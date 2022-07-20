@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.touchtalent.bobble.core.BobbleSDK
+import com.touchtalent.bobblesdk.bobble_transliteration.BobbleTransliteratorSdk
 import com.touchtalent.bobblesdk.demo.databinding.ActivityMainBinding
 
 /**
@@ -17,6 +18,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //set language to download resources, if not already present
+        BobbleTransliteratorSdk.setLanguages("hi_IN")
 
         binding.head.setOnClickListener {
             // Launch demo activity to show-case use of Head APIs

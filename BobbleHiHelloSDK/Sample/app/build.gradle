@@ -52,7 +52,7 @@ dependencies {
     kapt 'com.github.bumptech.glide:compiler:4.13.1'
 
     // Bobble BOM to automatically resolve versions for each modules
-    implementation platform('com.touchtalent.bobblesdk:bom:1.0.1')
+    implementation platform('com.touchtalent.bobblesdk:bom:1.0.2')
     // Bobble Core library to initiate all library
     implementation 'com.touchtalent.bobblesdk:core'
     // Bobble Content library
