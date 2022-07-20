@@ -30,10 +30,10 @@ class SplashActivity : AppCompatActivity {
 ```
 
 2. Start transliterating -
-   i. Add ```BobbleTranslatorView``` inside a XML layout of your Activity/Fragment
+   i. Add ```BobbleTransliteratorView``` inside a XML layout of your Activity/Fragment
 
 ```xml
-    <com.touchtalent.bobblesdk.bobble_transliteration.BobbleTranslatorView
+    <com.touchtalent.bobblesdk.bobble_transliteration.BobbleTransliteratorView
     android:id="@+id/suggestionStrip"
     android:layout_width="match_parent"
     android:layout_height="40dp"
