@@ -34,7 +34,7 @@ class SplashActivity : AppCompatActivity {
 
 ```xml
     <com.touchtalent.bobblesdk.bobble_transliteration.BobbleTransliteratorView
-    android:id="@+id/suggestionStrip"
+    android:id="@+id/transliterationView"
     android:layout_width="match_parent"
     android:layout_height="40dp"
     app:layout_constraintBottom_toTopOf="@+id/editText"
@@ -46,13 +46,13 @@ ii. Check if language is active then do the steps iii. & iv
 ```kotlin
 BobbleTransliteratorSdk.isActive("hi_IN")
 ```
-iii. Set languages for the trasnlator
+iii. Set languages for the translator
 ```kotlin
-    binding.suggestionStrip.setLanguage("hi_IN")
+    binding.transliterationView.setLanguage("hi_IN")
 ```
 iv. bind the editText where input will be given to translate
 ```kotlin
-    binding.suggestionStrip.bind(binding.editText)
+    binding.transliterationView.bind(binding.editText)
 ```
 
 ## <a name="supported_languages"></a>Supported Languages
