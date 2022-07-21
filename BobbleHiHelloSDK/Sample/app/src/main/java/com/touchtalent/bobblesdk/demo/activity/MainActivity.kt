@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.touchtalent.bobble.core.BobbleSDK
+import com.touchtalent.bobblesdk.bobble_transliteration.BobbleTransliteratorSdk
 import com.touchtalent.bobblesdk.demo.databinding.ActivityMainBinding
 
 /**

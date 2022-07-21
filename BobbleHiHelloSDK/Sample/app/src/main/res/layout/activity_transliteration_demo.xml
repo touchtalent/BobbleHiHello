@@ -8,68 +8,28 @@
 
     <include
         android:id="@+id/include"
-        layout="@layout/include_header" />
-
-    <RadioGroup
-        android:id="@+id/language_selector"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
-        app:layout_constraintEnd_toEndOf="@id/editText"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/include"
-        app:layout_constraintVertical_chainStyle="packed">
-
-        <RadioButton
-            android:id="@+id/hindi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_weight="1"
-            android:checked="false"
-            android:gravity="center"
-            android:text="@string/hindi" />
-
-        <RadioButton
-            android:id="@+id/bangla"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_weight="1"
-            android:checked="false"
-            android:text="@string/bangla" />
-
-    </RadioGroup>
+        layout="@layout/include_header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="10dp"
         android:hint="@string/enter_text"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/transliterated_text"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/language_selector"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintRight_toRightOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/transliterated_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        tools:text="Transliterated text here" />
+    <com.touchtalent.bobblesdk.bobble_transliteration.BobbleTransliteratorView
+        android:id="@+id/suggestionStrip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background_border_strip"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
