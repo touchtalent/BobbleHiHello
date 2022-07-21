@@ -48,11 +48,11 @@ BobbleTransliteratorSdk.isActive("hi_IN")
 ```
 iii. Set languages for the translator
 ```kotlin
-    binding.transliterationView.setLanguage("hi_IN")
+binding.transliterationView.setLanguage("hi_IN")
 ```
 iv. bind the editText where input will be given to translate
 ```kotlin
-    binding.transliterationView.bind(binding.editText)
+binding.transliterationView.bind(binding.editText)
 ```
 
 ## <a name="supported_languages"></a>Supported Languages
