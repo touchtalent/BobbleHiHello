@@ -1,7 +1,7 @@
 
 # Bobble Transliteration SDK
 
-Bobble Transliteration SDK is an input tool that can be integrated into any Android app to enable typing in regional languages. It can be leveraged to bridge the gap between users who prefer mixed scripts and users who prefer pure regional experience. Currently, [73 regional languages](#supported_languages) are supported.
+Bobble Transliteration SDK is an input tool that can be integrated into any Android app to enable typing in regional languages. It can be leveraged to bridge the gap between users who prefer mixed scripts and users who prefer pure regional experience. Currently, only Hindi is supported.
 
 ## <a name="setting_up"></a>Setting Up
 
