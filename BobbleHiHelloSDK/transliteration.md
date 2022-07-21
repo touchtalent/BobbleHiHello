@@ -42,9 +42,9 @@ class SplashActivity : AppCompatActivity {
     app:layout_constraintStart_toStartOf="parent"
 />
 ```
-ii. Check if language is active then do the steps iii. & iv
+ii. Check if language resources is available then do the steps iii. & iv
 ```kotlin
-BobbleTransliteratorSdk.isActive("hi_IN")
+BobbleTransliteratorSdk.isAvailable("hi_IN")
 ```
 iii. Set languages for the translator
 ```kotlin
